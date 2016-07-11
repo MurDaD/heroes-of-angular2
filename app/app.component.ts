@@ -1,5 +1,6 @@
 import { Component }          from '@angular/core';
 import { ROUTER_DIRECTIVES }  from '@angular/router';
+import {HTTP_PROVIDERS} from "@angular/http";
 
 import { HeroService }        from './hero.service';
 
@@ -17,6 +18,7 @@ import { HeroService }        from './hero.service';
     styleUrls: ['app/app.component.css'],
     directives: [ROUTER_DIRECTIVES],
     providers: [
+        HTTP_PROVIDERS,
         HeroService,
     ]
 })
